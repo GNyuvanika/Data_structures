@@ -1,0 +1,50 @@
+#include<stdio.h>
+int main()
+{
+	int n,i,a[20],select,insert,del;
+	printf("Enter the no.of elements in the array=");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("Enter an element=");
+		scanf("%d",&a[i]);
+	}
+	printf("1.Insert\n2.Delete\n3.Display\n");
+	printf("Enter the choice of operation:\n");
+	scanf("%d",&select);
+	if(select==1)
+	{
+	printf("Enter the number to be inserted=");
+	scanf("%d",&insert);
+	a[i]=insert;
+	n++;
+	for(i=0;i<n;i++)
+	{
+	printf("%d ",a[i]);
+	}
+}
+	else if(select==2)
+	{
+		printf("Enter the number to be deleted=");
+		scanf("%d",&del);
+		for(i=0;i<n;i++)
+		{
+		if(del==a[i])
+		{
+			continue;
+		}
+		printf("%d ",a[i]);
+	        }
+	}
+	else if(select==3)
+	{
+		for(i=0;i<n;i++)
+		{
+			printf("%d ",a[i]);
+		}
+	}
+	else
+	{
+		printf("Invalid operation");
+	}
+}
