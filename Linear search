@@ -1,0 +1,23 @@
+#include<stdio.h>
+int main()
+{
+	int n,a[20],i,p,x;
+	printf("Enter the no.of elements=");
+	scanf("%d",&n);
+	for(i=0;i<n;i++)
+	{
+		printf("Enter an element=");
+		scanf("%d",&a[i]);
+	}
+	printf("\nEnter the search element=");
+	scanf("%d",&x);
+	for(i=0;i<n;i++)
+	{
+		if(a[i]==x)
+		{
+			p=i;
+			break;
+		}
+	}
+	printf("\nElement %d is found at position %d\n",x,p+1);
+}
